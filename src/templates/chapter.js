@@ -30,7 +30,7 @@ const ChapterTemplate = ({ data }) => {
             <>
               
               <div key={id} className="infoBanner">
-                <Link to={`/${ref}/${slug}`} class={classes.lessonDecoration}>
+                <Link key={id} to={`/${ref}/${slug}`} class={classes.lessonDecoration}>
                   <span>#{title}</span>
                 </Link>
               </div>

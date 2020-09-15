@@ -9,7 +9,7 @@ import Post from '../components/post'
 const LessonTemplate = ({ data, pageContext }) => {	
 
 
-  
+
 
   const {	
     contentfulLessons : post ,	
@@ -26,7 +26,7 @@ const LessonTemplate = ({ data, pageContext }) => {
         date={post.date}	
         path={post.slug}	
         author={post.author}	
-        html={post.markedown.childMarkdownRemark.html}	
+        html={post.markedown.childMarkdownRemark.html || undefined}	
         tags={undefined}	
         coverImage={post.image || undefined}	
         previousPost={previous}	
