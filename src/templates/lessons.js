@@ -26,7 +26,7 @@ const LessonTemplate = ({ data, pageContext }) => {
         date={post.date}	
         path={post.slug}	
         author={post.author}	
-        html={post.markedown.childMarkdownRemark.html || undefined}	
+        html=""
         tags={undefined}	
         coverImage={post.image || undefined}	
         previousPost={previous}	
