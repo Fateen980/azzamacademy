@@ -43,12 +43,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           )
         })}
 
-        <Navigation
-          previousPath={previousPagePath}
-          previousLabel="Newer posts"
-          nextPath={nextPagePath}
-          nextLabel="Older posts"
-        />
+      
       </Layout>
     </>
   )
