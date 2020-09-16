@@ -15,7 +15,7 @@ module.exports = {
       src: '',
       alt: '',
     },
-    logoText: 'Azzam cademy',
+    logoText: 'Azzam Academy',
     defaultTheme: 'dark',
     postsPerPage: 100,
     showMenuItems: 2,
