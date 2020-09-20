@@ -5,17 +5,27 @@ import {Link } from 'gatsby'
 import classes from '../styles/sass/index.module.sass'
 
 const Chapter = ({name , course , slug }) => (
-  
-  <>
-    <section className={classes.chapter}>
-      <h2 className={classes.chapterTitle}>
 
-        <Link to={`/${course}/${slug}`} className={classes.chapterColor}>
-          {name}
-        </Link>
-      </h2>
-    </section>
-  </>
+  <section id="contact" className="contact section-show">
+    <div className="interests container">
+
+      <div className="section-title">
+        <h2>Chapter</h2>
+      </div>
+
+      <Link to={`/${course}/${slug}`} className={classes.chapterColor}>
+
+
+        <div className="icon-box">
+          <i className="book-alt" style={{color:'#ffbb2c'}} />
+          <h3>{name}</h3>
+        </div>
+
+
+      </Link>
+    </div>
+  </section>
+
 )
 
 Chapter.propTypes = {

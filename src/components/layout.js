@@ -3,9 +3,18 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Contact from './contact'
 import Footer from './footer'
 
-import '../styles/layout.css'
+import  '../assets/vendor/bootstrap/css/bootstrap.min.css'
+import  '../assets/vendor/boxicons/css/boxicons.min.css'
+import  '../assets/vendor/venobox/venobox.css'
+import  '../assets/vendor/icofont/icofont.min.css'
+import  '../assets/vendor/remixicon/remixicon.css'
+import  '../assets/vendor/owl.carousel/assets/owl.carousel.min.css'
+import  '../styles/layout.css'
+import  '../assets/css/style.css'
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -53,6 +62,7 @@ const Layout = ({ children }) => {
         menuMoreText={menuMoreText}
       />
       <div className="content">{children}</div>
+      <Contact />
       <Footer copyrights={copyrights} />
     </div>
   )

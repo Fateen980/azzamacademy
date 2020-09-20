@@ -27,15 +27,25 @@ const ChapterTemplate = ({ data }) => {
           } = node
 
           return (
-            <>
-              
-              <div key={id} className="infoBanner">
+            <section id="contact" className="contact section-show">
+              <div className="interests container">
+
+                <div className="section-title">
+                  <h2>Lesson</h2>
+                </div>
+
                 <Link key={id} to={`/${ref}/${slug}`} class={classes.lessonDecoration}>
-                  <span>#{title}</span>
+
+
+                  <div className="icon-box">
+                    <i className="book-alt" style={{color:'#ffbb2c'}} />
+                    <h3>{title}</h3>
+                  </div>
+
+
                 </Link>
               </div>
-             
-            </>
+            </section>
           )
         })}
 
