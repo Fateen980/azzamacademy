@@ -10,7 +10,7 @@ const ChapterPage = ({ data }) => {
 
 
     const {
-    allContentfulTawjihi : { edges: posts },
+    allContentfulCourses : { edges: posts },
   } = data
 
 
@@ -60,7 +60,7 @@ ChapterPage.propTypes = {
 
 export const postsQuery = graphql`
   query {
-    allContentfulTawjihi(
+    allContentfulCourses(
       sort: { fields: [date], order: DESC }
     ) {
       edges {

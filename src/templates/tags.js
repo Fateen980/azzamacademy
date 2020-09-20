@@ -16,7 +16,7 @@ const Tags = ({
 
   const {
     allContentfulBlogPost: { edges: posts },
-    allContentfulTawjihi : { edges: Tawjihiposts },
+    allContentfulCourses : { edges: Tawjihiposts },
   } = data
 
 
@@ -132,7 +132,7 @@ export const postsQuery = graphql`
       }
     }
 
-    allContentfulTawjihi(
+    allContentfulCourses(
       filter: {tags: {in:[$tag]}}
       sort: { fields: [date], order: DESC }
       limit: $limit

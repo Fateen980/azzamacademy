@@ -7,8 +7,7 @@ const Contact = () => (
     <div className="container">
 
       <div className="section-title">
-        <h2>Contact</h2>
-        <h6>PLEASE FILL OUT THE FORM BELOW AND WE WILL CONTACT YOU SHORTLY</h6>
+        <h2>Contact Us</h2>
       </div>
 
       <div className="row mt-2">
@@ -27,7 +26,7 @@ const Contact = () => (
             <h3>Social Profiles</h3>
             <div className="social-links">
               <a href="#" className="twitter"><i className="icofont-twitter" /></a>
-              <a href="#" className="facebook"><i className="icofont-facebook" /></a>
+              <a href="https://web.facebook.com/AzzamAcademy" className="facebook"><i className="icofont-facebook" /></a>
               <a href="#" className="instagram"><i className="icofont-instagram" /></a>
               <a href="#" className="google-plus"><i className="icofont-skype" /></a>
               <a href="#" className="linkedin"><i className="icofont-linkedin" /></a>
@@ -39,7 +38,7 @@ const Contact = () => (
           <div className="info-box">
             <i className="bx bx-envelope" />
             <h3>Email Me</h3>
-            <p>azzam_academy@hotmail.com</p>
+            <p>azzamacademy@yahoo.com</p>
           </div>
         </div>
         <div className="col-md-6 mt-4 d-flex align-items-stretch">
@@ -50,7 +49,9 @@ const Contact = () => (
           </div>
         </div>
       </div>
-
+      <div className="section-title">
+        <h6>PLEASE FILL OUT THE FORM BELOW AND WE WILL CONTACT YOU SHORTLY</h6>
+      </div>
       <form 
         method="post" 
         name="contactME"

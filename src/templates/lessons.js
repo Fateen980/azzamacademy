@@ -26,7 +26,7 @@ const LessonTemplate = ({ data, pageContext }) => {
         date={post.date}	
         path={post.slug}	
         author={post.author}	
-        html={post.markedown.childMarkdownRemark.html}	
+        html={post.markdown.childMarkdownRemark.html}	
         tags={undefined}	
         coverImage={post.image || undefined}	
         previousPost={previous}	
@@ -53,7 +53,7 @@ export const pageQuery = graphql`
     slug	
     id	
     title	
-    markedown {	
+    markdown {	
       childMarkdownRemark {	
             html	
           }	

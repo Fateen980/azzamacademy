@@ -10,7 +10,7 @@ import Layout from '../components/layout'
 const TawjihiPostTemplate = ({ data }) => {
   
   const {
-    contentfulTawjihi : post ,
+    contentfulCourses : post ,
     allContentfulChapters : { edges: chapters }  ,
   } = data
  
@@ -48,7 +48,7 @@ TawjihiPostTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query($slug: String , $course: String) {
-    contentfulTawjihi(slug: {eq: $slug}) {
+    contentfulCourses(slug: {eq: $slug}) {
     id  
     author
     date

@@ -10,7 +10,7 @@ const TawjihiPage = ({ data, pageContext: { nextPagePath, previousPagePath } }) 
 
 
     const {
-    allContentfulTawjihi : { edges: posts },
+    allContentfulCourses : { edges: posts },
   } = data
 
 
@@ -66,7 +66,7 @@ TawjihiPage.propTypes = {
 
 export const postsQuery = graphql`
   query {
-    allContentfulTawjihi(
+    allContentfulCourses(
       sort: { fields: [date], order: DESC }
     ) {
       edges {

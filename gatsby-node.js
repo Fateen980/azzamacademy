@@ -118,7 +118,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
 
     return graphql(`
     {
-      allContentfulTawjihi {
+      allContentfulCourses {
         edges {
           node {
             title
@@ -139,7 +139,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
       }
   
       const {
-        allContentfulTawjihi : { edges: markdownPages },
+        allContentfulCourses : { edges: markdownPages },
         site: { siteMetadata },
       } = result.data
   
