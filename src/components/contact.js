@@ -49,7 +49,7 @@ const Contact = () => (
           </div>
         </div>
       </div>
-      <div className="section-title">
+      <div className="section-title" style={{margin-top:"10px"}}>
         <h6>PLEASE FILL OUT THE FORM BELOW AND WE WILL CONTACT YOU SHORTLY</h6>
       </div>
       <form 
