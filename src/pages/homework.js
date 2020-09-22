@@ -25,7 +25,6 @@ const HomeWork = ({ data }) => {
               slug,
               author,
               excerpt,
-              image,
               tags,
           } = node
 
@@ -37,7 +36,7 @@ const HomeWork = ({ data }) => {
               path={slug}
               author={author}
               tags={tags}
-              coverImage={image || autoExcerpt}
+              coverImage={undefined}
               excerpt={excerpt  || autoExcerpt}
             />
           )
@@ -73,11 +72,6 @@ export const postsQuery = graphql`
               excerpt
             }
             tags
-            image {
-            fluid(maxWidth: 800) {
-            ...GatsbyContentfulFluid
-           }
-         }
         }
       }
     }
