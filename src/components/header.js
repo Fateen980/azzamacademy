@@ -40,7 +40,7 @@ const Header = props => {
         <body
           className={
             (userTheme || defaultTheme) === 'light'
-              ? 'light-theme'
+              ? 'dark-theme'
               : 'dark-theme'
           }
         />

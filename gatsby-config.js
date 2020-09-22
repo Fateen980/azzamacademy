@@ -29,6 +29,10 @@ module.exports = {
         title: 'Courses',
         path: '/Tawjihi',
       },
+      {
+        title: 'homework',
+        path: '/homework',
+      },
     ],
   },
   plugins: [
